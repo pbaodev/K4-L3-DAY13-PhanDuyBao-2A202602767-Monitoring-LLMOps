@@ -99,7 +99,7 @@ python scripts/validate_dashboard.py
 python -m pytest -q
 ```
 
-API mặc định chạy tại `http://127.0.0.1:8000`; health check ở `/health`, metrics ở `/metrics`.
+API mặc định chạy tại `http://127.0.0.1:8001`; health check ở `/health`, metrics ở `/metrics`.
 
 ## Lỗi thường gặp
 

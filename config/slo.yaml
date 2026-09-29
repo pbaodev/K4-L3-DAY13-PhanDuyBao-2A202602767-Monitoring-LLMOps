@@ -7,7 +7,21 @@ primary_slo:
     total_event: 'event == "request_received"'
   target_percent: 99.5
   error_budget_percent: 0.5
-  note: Học viên phải giải thích hoặc điều chỉnh ngưỡng bằng baseline của mình.
+  # Baseline đo trên máy tôi (fake LLM, Langfuse bật): P50 ~0.42s, P95 ~0.84s, P99 ~1.2s.
+  # Ngưỡng 3000ms cao hơn P99 baseline ~2.5 lần nên request bình thường luôn "tốt", còn
+  # incident rag_slow (+2.5s cho retrieval) đẩy latency lên ~3s và bắt đầu đốt budget.
+  # Giữ nguyên 3000ms/99.5% của contract vì đã khớp threshold P95 trong config/dashboard.yaml.
+  error_budget:
+    formula: (1 - target_percent/100) * total_events_in_window
+    example: 10000 request / 28 ngày -> tối đa 50 request chậm (>3000ms) hoặc lỗi
+    time_equivalent: 0.5% * 28d * 24h * 60 = ~201.6 phút "hỏng hoàn toàn" mỗi cửa sổ
+  burn_rate:
+    definition: (tỷ lệ request xấu trong cửa sổ ngắn) / error_budget_percent
+    fast_burn: '>= 14.4 trong 1h nghĩa là cạn budget 28d sau ~2 ngày -> page'
+    slow_burn: '>= 3 trong 6h -> ticket'
+  note: >
+    Request lỗi (request_failed) không có response_sent nên tự động tính là "xấu" trong
+    total_event, vì vậy tool_fail cũng đốt cùng một error budget.
 guardrails:
   error_rate_pct_max: 2
   daily_cost_usd_max: 2.5

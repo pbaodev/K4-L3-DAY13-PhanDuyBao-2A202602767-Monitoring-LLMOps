@@ -1,0 +1,13 @@
+Challenge: day13-k4-l3a-monitoring-llmops-v1 (cohort K4, latency_threshold_ms=2000)
+Incident window (UTC): 2026-09-29T09:16:54Z -> 2026-09-29T09:17:07Z
+
+metric              | before (10 req) | during incident (5 req, feature=monitoring)
+latency P50 (ms)    | 158             | 2664
+latency P95 (ms)    | 664             | 2665
+latency P99 (ms)    | 994             | 2665
+TTFT P95 (ms)       | 55              | 55
+cost/request (USD)  | 0.00196         | 0.00213
+quality mean        | 0.88            | 0.84
+error rate          | 0%              | 0%
+
+Kết luận: chỉ latency tăng (P95 664 -> 2665ms, vượt ngưỡng 2000ms và alert high_latency_p95); TTFT, cost, quality, lỗi không đổi.

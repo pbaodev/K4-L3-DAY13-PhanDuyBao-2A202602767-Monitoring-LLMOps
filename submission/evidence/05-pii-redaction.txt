@@ -1,0 +1,7 @@
+Input: Email a@b.com sdt 0912345678 CCCD 012345678901 the 4111 1111 1111 1111
+Log output:
+{"service": "api", "payload": {"message_preview": "Email [REDACTED_EMAIL] sdt [REDACTED_PHONE_VN] CCCD [REDACTED_CCCD] the [REDACTE..."}, "event": "request_received", "feature": "qa", "env": "dev", "model": "claude-sonnet-4-5", "correlation_id": "req-416fd52f", "session_id": "s1", "user_id_hash": "bb82030dbc2b", "level": "info", "ts": "2026-09-29T07:53:25.500873Z"}
+{"service": "api", "latency_ms": 380, "ttft_ms": 50, "tokens_in": 38, "tokens_out": 171, "cost_usd": 0.002679, "quality_score": 0.8, "tool_name": "retrieval", "tool_success": true, "payload": {"answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."}, "event": "response_sent", "feature": "qa", "env": "dev", "model": "claude-sonnet-4-5", "correlation_id": "req-416fd52f", "session_id": "s1", "user_id_hash": "bb82030dbc2b", "level": "info", "ts": "2026-09-29T07:53:25.881617Z"}
+
+$ grep -cE "a@b.com|0912345678|012345678901|4111 1111" data/logs.jsonl
+0

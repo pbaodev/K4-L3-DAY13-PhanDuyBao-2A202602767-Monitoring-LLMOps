@@ -1,0 +1,8 @@
+Trace (Langfuse US) cho req-37be4072: 1729a0af5e9638d86828b655143612c2
+  lab-agent-run  2.665s (root)
+    retrieve       2.506s  <-- span gây chậm
+    llm-generate   0.159s
+Trace khỏe để so sánh req-f354a0f8: eb6393b875eae33bb7b5969b43dad3a2
+  lab-agent-run  0.161s
+    retrieve       0.003s
+    llm-generate   0.158s

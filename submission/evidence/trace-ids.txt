@@ -1,0 +1,43 @@
+# Trace IDs trong project Langfuse cá nhân day13-k4-l3a-2A202602767 (US region)
+# start_time | correlation_id | prompt_label | prompt_version | trace_id
+2026-09-29T08:37:22.427Z | req-f754b5b4 | production | v1 | 662d13e58f14b64da3f364b9c28493e4
+2026-09-29T08:37:23.410Z | req-d4c8f656 | production | v1 | d592f5b238b83d75bc46b5ccabff05f9
+2026-09-29T08:37:23.575Z | req-eb2d3a45 | production | v1 | 5a60d11af93c2a348c0ff522da1523db
+2026-09-29T08:37:23.735Z | req-0ad1deb7 | production | v1 | 7a709db9c27c66f9f6564bab3fde3bf7
+2026-09-29T08:37:23.899Z | req-85880804 | production | v1 | 61813fbb1a04a062fffdf5fb381ad1f4
+2026-09-29T08:37:24.061Z | req-7b915140 | production | v1 | 00c2e873313700098c18cadcb24595d4
+2026-09-29T08:37:24.227Z | req-9b0610a7 | production | v1 | 32896d820d95d67716907ef1af6f4b59
+2026-09-29T08:37:24.388Z | req-255bf8a1 | production | v1 | db32a8b9eccb575839bb6146b4112a0e
+2026-09-29T08:37:24.552Z | req-b3efe99e | production | v1 | 446e77bb818a25dc62cf443a0d7404ea
+2026-09-29T08:37:24.713Z | req-aec1d42b | production | v1 | ad4c41d0f0eb98e2c651d672f5b8a8f6
+2026-09-29T08:38:06.155Z | req-lab-cand-v2 | candidate | v2 | 5e1a994281c07eec6bb270fcfc502349
+2026-09-29T08:38:17.951Z | req-lab-prod-v2 | production | v2 | d38c61327800f0f34516e9e5ae2014cd
+2026-09-29T08:38:29.445Z | req-lab-prod-v1 | production | v1 | cc2fbe960bfd99d8009f2cf836c2e15e
+2026-09-29T08:38:58.871Z | req-lab-base-v1 | baseline | v1 | 49e2f46c906323be47f0d4562f7fe19e
+2026-09-29T08:39:22.152Z | req-lab-pii01 | baseline | v1 | 2697afc12735a69000fb43db6ce11733
+2026-09-29T09:16:48.554Z | req-3936cfe3 | production | v1 | 78a3f40d00b485ca72ca7bb2274b373d
+2026-09-29T09:16:49.632Z | req-6930037b | production | v1 | 4298b8aa6a56e3312ac809ed7349f8d8
+2026-09-29T09:16:49.795Z | req-95dd62a8 | production | v1 | 2fb8b71a07b3d840f2cb0c442f0dd8c7
+2026-09-29T09:16:49.956Z | req-5353303a | production | v1 | a60ee9c13b72c9a7bf9b4ad7744d1963
+2026-09-29T09:16:50.121Z | req-58c1a79c | production | v1 | b0a41f44472b4fc42a7571708789d32d
+2026-09-29T09:16:50.282Z | req-62ee79ce | production | v1 | ed8e48c6431cbf36046f1548c89d651f
+2026-09-29T09:16:50.445Z | req-da90d3ac | production | v1 | f34fc7b57b52b04f5d3129fe0a4a5435
+2026-09-29T09:16:50.605Z | req-bfe21a20 | production | v1 | f45313b29fefae6e10bdbd2add440b16
+2026-09-29T09:16:50.765Z | req-f354a0f8 | production | v1 | eb6393b875eae33bb7b5969b43dad3a2
+2026-09-29T09:16:50.928Z | req-a64ca720 | production | v1 | 1e310726862c311c83eafdfebabffb86
+2026-09-29T09:16:54.287Z | req-37be4072 | production | v1 | 1729a0af5e9638d86828b655143612c2
+2026-09-29T09:16:56.954Z | req-ab8d1b9e | production | v1 | 71d43c62a5def4860f021f8ff66d40e4
+2026-09-29T09:16:59.621Z | req-97655b82 | production | v1 | f650697e984113a2bbc32dc9a464e65c
+2026-09-29T09:17:02.283Z | req-49a7fac0 | production | v1 | 566d81dc9f59de4cced70f72d01cc4c1
+2026-09-29T09:17:04.953Z | req-6824643f | production | v1 | d886b95938e872b143e82094f2ac7939
+2026-09-29T09:18:47.080Z | req-cda3d2f2 | production | v1 | 9766c9a9bfba4a72f9809ff69d4e8a8d
+2026-09-29T09:18:47.240Z | req-052f8e1a | production | v1 | 4d59ca0939d368b8027c2ee9cc21932d
+2026-09-29T09:18:47.398Z | req-e210eccd | production | v1 | b5232767fe8d2361b739f11a459d43fc
+2026-09-29T09:18:47.562Z | req-ef39e430 | production | v1 | 94c7e8297ec392a86a7ab1926e2c846d
+2026-09-29T09:18:47.721Z | req-7aac10ab | production | v1 | 1e2b294ae06e2c3c2f7f3f9a69c45434
+2026-09-29T09:18:47.886Z | req-aae1e5a9 | production | v1 | ada6d84d1e0ccbc07ad5f9f4fe9edc92
+2026-09-29T09:18:48.047Z | req-9d5bccc7 | production | v1 | 6ee7e08ccc9fac0f4c9a0e3b6a223a40
+2026-09-29T09:18:48.208Z | req-aa05ba49 | production | v1 | e33788453228a7161d9c44bd417a22b0
+2026-09-29T09:18:48.374Z | req-a7a28715 | production | v1 | 4d6eed47d7bada871194e07fe8694534
+2026-09-29T09:18:48.538Z | req-d3285a83 | production | v1 | e851ab3769f151d694315e981003228d
+# total traces: 40
